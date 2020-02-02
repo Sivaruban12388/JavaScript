@@ -25,14 +25,29 @@
 		
 		//using comparison operators
 		//once comparison is preform we can get a boolean result (true/false)
-		document.write('<hr>' + count1 > count2);
-		document.write('<hr>' + count1 < count2);
-		document.write('<hr>' + 100>=100);
-		document.write('<hr>' + 200<=200);
-		document.write('<hr>' + count1 == count2);
-		document.write('<hr>' + 100==200);
-		document.write('<hr>' + '100' === 100);
-		document.write('<hr>' + 100 !=200);
+		document.write('<hr>' + (count1 > count2));
+		document.write('<hr>' + (count1 < count2));
+		document.write('<hr>' + (100>=100));
+		document.write('<hr>' + (200<=200));
+		document.write('<hr>' + (count1 == count2));
+		document.write('<hr>' + (100==200));
+		document.write('<hr>' + ('100' === 100));
+		document.write('<hr>' + (100 !=200));
+		
+		//using logical operators 
+			//logical operators will use when there is a need for validate mulyiple comparison operators
+		document.write('<hr> using AND ' + ((count1 > count2) && (count1<count2)));
+		document.write('<hr> using AND ' + ((100 !=200) && (count1<count2)));
+		
+		//using or operator - eighter one input need to true for or operator to set final result True
+		document.write('<hr> using OR ' + ((count1 > count2) || (count1<count2)));
+		document.write('<hr> using OR ' + ((100 !=200) || (count1<count2)));
+		
+		
+		//NOT operator will convert the result into its opposite value
+		
+		document.write('<hr> NOT operator ' + !((count1 > count2) && (count1<count2)));
+		
 		
 		
 	</script>
